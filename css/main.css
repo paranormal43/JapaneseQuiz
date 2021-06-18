@@ -427,7 +427,9 @@ footer .next_btn:hover{
 
 .footer_name{
   /* position: absolute; */
-  text-align: center;
-  margin-top: 90%;
+  margin: 660px 25% 0px 25% ;
+  /* margin-top: 90%; */
+  pointer-events: none;
+
 }
    
