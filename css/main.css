@@ -424,3 +424,10 @@ footer .next_btn:hover{
   transition: all 0.3s ease;
   /* box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.5); */
 }
+
+.footer_name{
+  /* position: absolute; */
+  text-align: center;
+  margin-top: 90%;
+}
+   
