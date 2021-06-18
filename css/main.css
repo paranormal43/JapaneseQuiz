@@ -430,6 +430,7 @@ footer .next_btn:hover{
   margin: 660px 25% 0px 25% ;
   /* margin-top: 90%; */
   pointer-events: none;
+  text-align: center;
 
 }
    
