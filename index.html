@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>เว็บไซด์สำหรับเตรียมสอบภาษาญี่ปุ่น</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Sarabun:wght@300&family=Sawarabi+Mincho&display=swap">
+  <link rel="icon" href="images/favicon.ico">
+  <!-- Link to Icon by Fontawasome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+  <!-- ปุ่มเริ่มเข้าให้ทำงาน  -->
+  <div class="start_btn">
+    <button type="button" name="start_btn" onclick="start()">เริ่มทำการทดสอบ</button>
+  </div>
+  <!-- ข้อกำหนดในการใช้งาน -->
+  <div class="info_box">
+    <div class="info-title">ข้อกำหนดการใช้งาน</div>
+    <div class="info-list">
+      <div class="info">1.ตั้งใจทำข้อสอบเพื่อที่จะได้เกิดการพัฒนาด้วยตัวเอง🤭 </div>
+      <div class="info">2.จะพยายามเพิ่มเนื้อหาให้ได้มากกว่านี้</div>
+      <div class="info">3.ขอให้มี<span>ความสุข</span>กับการเรียนภาษาญี่ปุ่น</div>
+      <div class="info1">"楽しんだら笑って、楽しくなかったら後で笑って"</div>
+    </div>
+    <div class="buttons">
+      <button type="button" class="exit_btn" onclick="exit()">ออกจากการเรียน</button>
+      <button type="button" class="restart" onclick="continue_quiz()">เริ่มต้น</button>
+    </div>
+  </div>
+  <!-- รายละเอียดข้อสอบ -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">質問：</div>
+      <div class="timer">
+        <div class="time_text">残り時間 : </div>
+        <div class="time_sec">20</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="question_text">
+        <!-- <span>_______ な資金は、安定した経営、さらに事業拡大できるチャンスにつながります。</span> -->
+      </div>
+      <div class="choice_list">
+        <!-- <div class="choice">
+          <span>豊富</span>
+          <div class="icon cross"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="choice">
+          <span>贅沢</span>
+          <div class="icon tick"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="choice">
+          <span>幸福</span>
+        </div>
+        <div class="choice">
+          <span>多量</span>
+        </div> -->
+      </div>
+    </section>
+
+
+    <!-- Quiz Footer  -->
+    <footer>
+      <div class="total_answer">
+        <!-- <span>ตอบถูก<p>X</p>of<p>Y</p></span> -->
+      </div>
+      <button class="next_btn" onclick="next_question()">คำถามต่อไป</button>
+    </footer>
+  </div>
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete">คุณได้ตอบคำถามครบทุกข้อแล้ว🥳</div>
+      <div class="score_total">
+        <!-- <span>คุณได้คะแนนไปทั้งสิ้น : <p>X</p>จากทั้งหมด<p>Y</p></span> -->
+      </div>
+      <div class="buttons">
+        <button class="restart" onclick="restartQuiz()">ทดสอบอีกครั้ง</button>
+        <button class="exit_btn" onclick="ExitQuit()">ออก</button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+
+    <script src="js/question.js"></script>
+  
+</body>
+
+</html>
